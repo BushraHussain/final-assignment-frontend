@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import CreateNFT from './Components/CreateNFT';
+import Home from './Components/Home';
+import { WalletConnection } from './Components/WalletConnection';
+
+import MenuBar from './Components/MenuBar';
+import TopMenu from './Components/TopMenu';
+import Marketplace from './Components/Marketplace';
+
+
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <TopMenu />,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
